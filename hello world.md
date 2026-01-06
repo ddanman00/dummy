@@ -13,3 +13,8 @@ normal text
 
 ---
 
+
+# [{title}]
+Tags: 
+[[2026-01-06]] <span style="float: right;">January 6, 2026</span>
+
