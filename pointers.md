@@ -18,10 +18,10 @@ int main() {
 }
 ~~~
 Output: 10
-- We cannot dereference a void pointer.
+- A void pointer cannot be dereferenced without type casting.
 
 Uses:
-- malloc and calloc function returns a void function. Due to this they can allocate a memory for any data type.
+- malloc and calloc functions return a void pointer. Due to this they can allocate a memory for any data type.
 
 ## Null Pointer
 
@@ -41,7 +41,7 @@ Uses:
 - Useful for handling errors when using the malloc function.  
 
 Facts:
-- The value of NULL is 0. We can either use NULL or 0, but this 0 is written in context of pointers and is not equivalent to the integer 0.
+- NULL is a macro typically defined as ((void*)0) or 0, depending on the compiler. We can either use NULL or 0, but this 0 is written in context of pointers and is not equivalent to the integer 0.
 - Size of the NULL pointer depends upon the platform and is similar to the size of the normal pointers.
 
 Best Practices:
@@ -60,7 +60,8 @@ int main() {
     // statements
 
     free(ptr);
-    // here we are freeing the allocated memory, but it still points to that deacllocated memory, which currently does not exist.
+    // here we are freeing the allocated memory, but it still points to that deallocated memory
+    // which currently does not exist.
 
     // to fix that, we just re-initialise it to NULL.
     ptr = NULL;
