@@ -23,8 +23,6 @@ Output: 10
 Uses:
 - malloc and calloc function returns a void function. Due to this they can allocate a memory for any data type.
 
----
-
 ## Null Pointer
 
 - A NULL Pointer is a pointer that does not point to any memory location. It represents an invalid memory location.
@@ -49,8 +47,6 @@ Facts:
 Best Practices:
 - Initialize a pointer as NULL, and not 0.
 - Perform NULL check before dereferencing any pointer to avoid surprises.
-
----
 
 ## Dangling Pointer
 
@@ -92,8 +88,6 @@ Output: Segmentation fault
 - When we are trying to return the address of the `num` variable from the `fun` function, the `num` variable is local to that function only, and upon execution of the function, the variable will not exist, and so it is basically like deallocated memory.
 - Seg fault is basically trying to access illegal memory.
 
----
-
 ## Wild Pointer
 
 - Also known as uninitialized pointers.
@@ -110,6 +104,4 @@ int main() {
 
 How to avoid:
 - Initialize them with the address of a known variable.
-
 - Explicitly allocate the memory and put the values in the allocated memory.
-
