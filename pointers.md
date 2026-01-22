@@ -1,6 +1,8 @@
-## Pointers
+# Pointers
 
-### Void Pointer
+A pointer is a variable that stores the memory address of another variable. Instead of holding a direct value, it holds the address where the value is stored in memory.
+
+## Void Pointer
 
 - Void pointer is a pointer which has no associated data type with it.
 - It can point to any data of any data type and can be type casted to any type.
@@ -23,7 +25,7 @@ Uses:
 
 ---
 
-### Null Pointer
+## Null Pointer
 
 - A NULL Pointer is a pointer that does not point to any memory location. It represents an invalid memory location.
 - When a NULL value is assigned to a pointer, then the pointer is considered as a NULL pointer.
@@ -50,7 +52,7 @@ Best Practices:
 
 ---
 
-### Dangling Pointer
+## Dangling Pointer
 
 - A dangling pointer is a pointer which points to some non-existing memory location.
 
@@ -92,7 +94,7 @@ Output: Segmentation fault
 
 ---
 
-### Wild Pointer
+## Wild Pointer
 
 - Also known as uninitialized pointers.
 - These pointers usually point to some arbitrary memory location and may cause a program to crash or misbehave.
@@ -110,3 +112,4 @@ How to avoid:
 - Initialize them with the address of a known variable.
 
 - Explicitly allocate the memory and put the values in the allocated memory.
+
